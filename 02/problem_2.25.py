@@ -8,13 +8,13 @@ def subract(v1, v2):
 	return (v1[0] - v2[0], v1[1] - v2[1])
 
 def length(v):
-	return sqrt(v[0] ** 2 + v1 ** 2)
+	return sqrt(v[0] ** 2 + v[1] ** 2)
 
 def distance(v1, v2):
 	return length(subract(v1, v2))
 
 def perimeter(vectors):
-	distances = [distance(vectors[i], vectors[(i + 1) % len(vectors)] for i in range(0, len(vectors)))]
+	distances = [distance(vectors[i], vectors[(i + 1) % len(vectors)]) for i in range(0, len(vectors))]
 	return sum(distances)
 
 def main():
