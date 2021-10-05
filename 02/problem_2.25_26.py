@@ -23,5 +23,10 @@ def main():
     (-1,-4), (1,-4), (2,-3), (1,-2), (3,-1), (5,1)]
 	print(perimeter(dino_vectors))
 
+	for n in range(-12, 15):
+		for m in range(-14, 13):
+			if distance((n, m), (1, -1)) == 13 and n > m > 0:
+				print((n, m))
+
 if __name__ == '__main__':
 	main()
